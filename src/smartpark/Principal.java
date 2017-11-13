@@ -7,7 +7,7 @@ package smartpark;
 
 /**
  *
- * @author felipe
+ * 
  */
 public class Principal extends javax.swing.JFrame {
 
@@ -41,6 +41,11 @@ public class Principal extends javax.swing.JFrame {
         });
 
         btnAddVaga.setText("vagas");
+        btnAddVaga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddVagaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -82,6 +87,11 @@ public class Principal extends javax.swing.JFrame {
     private void btnAddVeiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddVeiculoActionPerformed
         new CRUDVeiculo().setVisible(true);
     }//GEN-LAST:event_btnAddVeiculoActionPerformed
+
+    private void btnAddVagaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddVagaActionPerformed
+        new AddVagas().setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddVagaActionPerformed
 
     /**
      * @param args the command line arguments
